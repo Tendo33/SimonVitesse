@@ -17,17 +17,17 @@ const routes = [
 	{
 		path: "/user/login",
 		name: "Login",
-		component:  HomeView,
+		component: HomeView,
 	},
 	{
 		path: "/user/register",
 		name: "Register",
-		component:  HomeView,
+		component: HomeView,
 	},
 	{
 		path: "/admin/userManage",
 		name: "adminUserManage",
-		component:  HomeView,
+		component: HomeView,
 	},
 ];
 

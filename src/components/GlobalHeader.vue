@@ -82,7 +82,6 @@ const items = ref<MenuProps["items"]>([
 		title: "Simon's Blog",
 	},
 ]);
-
 </script>
 
 <style scope>
