@@ -24,10 +24,13 @@
 import { h, ref } from "vue";
 import { MailOutlined, AppstoreOutlined, SettingOutlined, HomeOutlined, CrownOutlined } from "@ant-design/icons-vue";
 import type { MenuProps } from "ant-design-vue";
+import { useRouter } from "vue-router";
+
 // 点击菜单后的路由跳转事件
 const router = useRouter();
 const doMenuClick = ({ key }: { key: string }) => {
-	router.push((path = key));
+	console.log("Clicked key:", key); // 调试日志
+	router.push(key);
 };
 
 const current = ref<string[]>(["mail"]);

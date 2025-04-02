@@ -7,28 +7,28 @@ const routes = [
 	{
 		path: "/",
 		name: "Home",
-		component: () => HomeView,
+		component: HomeView,
 	},
 	{
 		path: "/about",
 		name: "About",
-		component: () => AboutView,
+		component: AboutView,
 	},
 	{
 		path: "/user/login",
 		name: "Login",
-		component: () => HomeView,
+		component:  HomeView,
 	},
 	{
 		path: "/admin/userManage",
 		name: "adminUserManage",
-		component: () => HomeView,
+		component:  HomeView,
 	},
 ];
 
 // 创建路由实例
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
+	history: createWebHistory(import.meta.env.BASE_URL),
 	routes,
 });
 
