@@ -9,13 +9,14 @@
       </a-layout-content>
       <a-layout-footer class="footer">
         <a href="https://simonsun.xyz" target="_blank">Simon's Blog</a>
+        <br>created by Simon Sun
       </a-layout-footer>
     </a-layout>
   </div>
 </template>
 
 <script setup lang="ts">
-import GlobalHeader from "../components/GlobalHeader.vue";
+
 </script>
 
 <style scoped>

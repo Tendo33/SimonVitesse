@@ -70,12 +70,19 @@ const items = ref<MenuProps["items"]>([
 		title: "用户管理",
 	},
 	{
+		key: "/about",
+		icon: () => h(SettingOutlined),
+		label: "关于",
+		title: "关于",
+	},
+	{
 		key: "blogs",
 		icon: () => h(SettingOutlined),
 		label: h("a", { href: "https://simonsun.xyz", target: "_blank" }, "Simon's Blog"),
 		title: "Simon's Blog",
 	},
 ]);
+
 </script>
 
 <style scope>
