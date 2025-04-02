@@ -38,6 +38,10 @@ const doMenuClick = ({ key }: { key: string }) => {
 		console.error("Router is not initialized");
 	}
 };
+// 监听路由变化，更新当前菜单项
+router.afterEach((to, from) => {
+	current.value = [to.path];
+});
 
 const current = ref<string[]>(["mail"]);
 const items = ref<MenuProps["items"]>([
