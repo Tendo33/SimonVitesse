@@ -14,6 +14,16 @@ const routes = [
 		name: "About",
 		component: () => AboutView,
 	},
+	{
+		path: "/user/login",
+		name: "Login",
+		component: () => HomeView,
+	},
+	{
+		path: "/admin/userManage",
+		name: "adminUserManage",
+		component: () => HomeView,
+	},
 ];
 
 // 创建路由实例
