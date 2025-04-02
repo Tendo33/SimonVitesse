@@ -20,6 +20,11 @@ const routes = [
 		component:  HomeView,
 	},
 	{
+		path: "/user/register",
+		name: "Register",
+		component:  HomeView,
+	},
+	{
 		path: "/admin/userManage",
 		name: "adminUserManage",
 		component:  HomeView,
