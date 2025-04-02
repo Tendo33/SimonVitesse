@@ -6,5 +6,5 @@ import "ant-design-vue/dist/reset.css";
 import router from "./router";
 const app = createApp(App);
 app.use(Antd);
-app.mount("#app");
 app.use(router); // 挂载路由实例
+app.mount("#app");

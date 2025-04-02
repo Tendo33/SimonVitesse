@@ -26,11 +26,17 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined, HomeOutlined, CrownOut
 import type { MenuProps } from "ant-design-vue";
 import { useRouter } from "vue-router";
 
-// 点击菜单后的路由跳转事件
 const router = useRouter();
+console.log("Router instance:", router); // 调试日志
+
+// 点击菜单后的路由跳转事件
 const doMenuClick = ({ key }: { key: string }) => {
 	console.log("Clicked key:", key); // 调试日志
-	router.push(key);
+	if (router) {
+		router.push(key);
+	} else {
+		console.error("Router is not initialized");
+	}
 };
 
 const current = ref<string[]>(["mail"]);
