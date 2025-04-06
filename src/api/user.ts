@@ -37,3 +37,11 @@ export const getUserInfo = async () => {
 	});
     return res;
 };
+
+export const getCurrentUser = async () => {
+	const res = await myAxios.request({
+		url: "/api/user/current",
+		method: "get",
+	});
+    return res;
+}
