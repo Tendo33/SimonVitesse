@@ -3,7 +3,7 @@ import { getCurrentUser } from "@/api/user";
 
 export const useLoginUserStore = defineStore("loginUser", () => {
 	const loginUser = ref<any>({
-		username: "",
+		username: "未登录",
 		password: "",
 	});
 
