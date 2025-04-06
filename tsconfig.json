@@ -6,8 +6,10 @@
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    // 这里定义路径别名
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@/*": ["src/*"]
     },
     "resolveJsonModule": true,
     "types": [
