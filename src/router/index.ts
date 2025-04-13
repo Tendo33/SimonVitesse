@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/Home.vue";
-import AboutView from "@/views/About.vue";
+import AboutView from "~/views/AboutView.vue";
 
 // 定义路由
 const routes = [

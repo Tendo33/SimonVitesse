@@ -4,7 +4,7 @@ import { getCurrentUser } from "@/api/user";
 export const useLoginUserStore = defineStore("loginUser", () => {
 	// 响应式变量
 	const loginUser = ref<any>({
-		username: "未登录",
+		username: "Simon",
 		password: "",
 	});
 	// 远程获取登录用户信息
