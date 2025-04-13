@@ -13,6 +13,7 @@
 
 			<a-col flex="100px">
 				<div class="user-login-status">
+				{{ JSON.stringify(useLoginUserStore.loginUser) }}
 					<a-button type="primary" href="/user/login">登录</a-button>
 				</div>
 			</a-col>
@@ -26,9 +27,10 @@ import { MailOutlined, AppstoreOutlined, SettingOutlined, HomeOutlined, CrownOut
 import type { MenuProps } from "ant-design-vue";
 import { useRouter } from "vue-router";
 
+import { useLoginUserStore as loginUserStore } from "@/store/useLoginUserStore";
 const router = useRouter();
 console.log("Router instance:", router); // 调试日志
-
+const useLoginUserStore = loginUserStore();
 // 点击菜单后的路由跳转事件
 const doMenuClick = ({ key }: { key: string }) => {
 	console.log("Clicked key:", key); // 调试日志
